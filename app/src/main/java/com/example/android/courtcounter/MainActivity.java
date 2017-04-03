@@ -18,35 +18,37 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(0);
     }
 
-    public void addThreeForTeamA (View view) {
+    public void addThreeForTeamA(View view) {
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
     }
 
-    public void addTwoForTeamA (View view) {
+    public void addTwoForTeamA(View view) {
         scoreTeamA = scoreTeamA + 2;
-        displayForTeamA(scoreTeamA);    }
+        displayForTeamA(scoreTeamA);
+    }
 
-    public void addOneForTeamA (View view) {
+    public void addOneForTeamA(View view) {
         scoreTeamA = scoreTeamA + 1;
-        displayForTeamA(scoreTeamA);    }
+        displayForTeamA(scoreTeamA);
+    }
 
-    public void addThreeForTeamB (View view) {
+    public void addThreeForTeamB(View view) {
         scoreTeamB = scoreTeamB + 3;
         displayForTeamB(scoreTeamB);
     }
 
-    public void addTwoForTeamB (View view) {
+    public void addTwoForTeamB(View view) {
         scoreTeamB = scoreTeamB + 2;
         displayForTeamB(scoreTeamB);
     }
 
-    public void addOneForTeamB (View view) {
+    public void addOneForTeamB(View view) {
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
     }
 
-    public void resetScore (View view) {
+    public void resetScore(View view) {
         scoreTeamA = 0;
         scoreTeamB = 0;
         displayForTeamA(scoreTeamA);
@@ -60,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
+
     /**
      * Displays the given score for Team B.
      */
